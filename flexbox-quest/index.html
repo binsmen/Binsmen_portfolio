@@ -1,0 +1,462 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox-Quest</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAZlBMVEX///8AAAD39/f8/Pzu7u709PTg4OCLi4s6Ojqjo6OmpqYnJydYWFjd3d0+Pj6Ojo4UFBTAwMBFRUWxsbF7e3u4uLg1NTVnZ2fQ0NAICAicnJxdXV0tLS3KysohISGBgYFOTk5xcXH3x2aoAAAHPUlEQVR4nOVc6ZKyOhAVCKgsiqCyCCrv/5KfDDKypE9CSJxbdc/PGWpyptPpPdls1oB5ee0fz7dDEBeWVcTB4XY++nXuMWfV31UndNlmz8DiIkiy7YV9l48TXc58NmOcL9G3JOaVISEgjsjCMjLPKNonsoR6HPZGeTl5Vi2l1KLKalPbyPyrCqMOV9+E3rvlQZ1Si13p6qbk39dRahHvddJyLiul1ONw0aZb+U0PpRa3XAsl+1jo4/TyRUd7Pada0859sKvXimmrm1KL7SphRaEJTpYVrrDxJzOUWpxUORnZuh5bJUosM8nJsjIFv+M+zXKyrGSxfc93pjm9bMNCQ+pJh3FrUHlLONUa3K8M7gvsqPclTi9W0rLKv7J3HSpJvXK/oOMf7KTOIDNuC8Z4yrAybDPnyMScjPoWPoQex6APpiHwztFfcLIsGMnYhuInEUIU9f2BQnUAalX/FSfLIv2NTeQIYaItnykSQkFIG3okODku806PJF7HJ04eJ4+5DsGK2MCckEd/YCN/xTEI/f6EEUan4DpBh8iD40/YakeNUvxwz6LP8WKExG+8jP5C/MVm9LGncEC3o/jEaYjPLnNOLpUJl9MPG86/WgTV9VoFHAWIm2mCUBILHea6vqf+z7kPyIcVxt1tW6anOvIY86L6lJbb2zD0SeaqQnoyfyYo6mzFnNjQ8WOruD7D7YW59kwVHNtll2P4vBZWvOcoikctdZ+KipKpFcz/aiustPZEpSavTvlhJRnYTjSFkdEmn9QqkKQOY/Xzqe+sq35SdD03HX7m0N8l+knRlfjdUCWAJz7oJwXKcEMlBHH5N3VqFK9H4LPvkqo+MShpOF+4a+8UMOQ/97+foVor33uvARWN/OD3XOFsYY8WUAHaF8vqHQhpzX+gVgcEeMDl3ladigXfqDQrFcPdubAzVejsWSpVQAwXdzGD7vxR0V2HL5++PtbDPWrlgjcNXBo4/3wDP9Gu5i1wSN1+wdAHsYaW0xw2zNZafYEqlQoXUEKK1myVCslSqsqmANg5aDUGVe4MCQqL6hUpMGA2ClOcNhvg/xIGewtGjl4HoDSBt8mBILUHCB/gZUEk/DQ4bIQK4zXIY6yHOU4wVvCpolQLY2evBRDGEXm+RY2vpfDodc8bMJ1hxMX0sOl1byA+j01yQpbqAPIdA2noEHSvLNjQDrsxS6oBW0RL0aA9b0Hb9AKEeH9GygKSOpolRRvI4r+5fbSiG/UyyM/EwCTczJKiU+AAGE8DRaAhkIEEbsYsKXrdG3LIhrKGDi697hmFLgYDTxh6HlFeob0yNQSoUqUoHDbq/Bp63RqJ8a9i9BymWAaH20FJs/JgMmowSAeq/EpGUdpuoAXSA4iiLfCjAocxpUL1pzY6QaWgaatWG1BB+iIgnRgSFVLkbnvA73kdcB2AhbqfL1Ah1lCahcqLZzFtI64GNkK6zYlQCyA2YEAjJKh3cw23QQzEn/Aex7sNImgrac8fcBW91xdQAGmh+QTirsun1CO48KGVlYDTx7OBAlaLWGN/5iQYDfvMu3iiC3LaDANW3/GEunA0d6vnDpVw+Go4sosKyB0OGrKIXHxZabgKGCvpER9XCss5iicNr6M1YFvpjbu/IhGUuyA4DnXZULLPfR5FUZrNCjKJ6mVGt5S6/joZVRpFXf10KivnAj+fFodY7NTIMLLmh9wdSPeT70WcRGiXpWw+88aHY7M0k77+Oht/GxnQQRTMNxbXpkxPOQwgovyUls2iKxyzQcHxSGX2ux45lWlZxfyPEP+kHHgDEGOn9PhtN5CBjaDSh6dHOOA5s8mY7rP/OeWDKsFJdBfevuGO6U5HiJpeVoQNE6bPMrbvg5hwGZNSVb89/Mj0KjQNgkmbCagCuT1pl/RxFHcMRKJ2vESrOIPDb0xqVff+DPKcu0SMteS6C7i+Nlk9I37+QiFh2Jn8LQSUCEyvqPzyT6futBJzQt2zCeAVlWkOcf78Ymza71Jxu/RVM0FjeKwHw7nvqOltfpVJVtNkSQn1c0t/7tV+eSz3tXTSLHlRQyKzHO3TXXZ9LuSeNJC4SjepHUGnq4WUXA16fD1zzTsCMvcX5a5nvpzg0D/sVhTzJEjJXmSdXPk9qA9yNEJO8ld+X/5mGHYkyiUqIakll6On18hVi/yiV46ChZsQjbJZlWcExKQOi7fAHmdq51phHAfHLipDyZNHHOLn4/RKrV6wba9+SNkvSEpR+pww6p4k3b5KFR1RkUW5agmitLWkVtThPNKlSs2ckKTCVUNs5GMzq0ite2xmQz7LI9Xf4nfyVz/Ls2kfMOIVu6RI8RpoWh4weiHnOFZVUpqeetpwH8VSI6XxUawNpzqoQipeU5/k09qPpCVVWR+ROmh90awHSwe0lkrqmhprkudNH5RK+b6+cFZludE3GD2/S+akbE1Xm0j2RoeQO3j7MLhJ6Ycb3sPyC4x+4ESSK3lfezrzf4p/pW1g0BW7JdwAAAAASUVORK5CYII=">
+    <!-- <link href="../src/output.css" rel="stylesheet"> -->
+    <style>
+        *{
+            color: #F8FAFC;
+            background-color: #08080C;
+            
+        }
+        body{
+            border: 3px dashed #27272F;
+        }
+        .game-header{
+            display: flex;
+            justify-content: space-between;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            align-items: center;
+            height: 75px;
+            gap: 20px;
+            padding: 35px;
+            margin: 20px;
+            border: 3px solid #181871;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px 3px rgba(13, 230, 5, 0.549);
+            /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); */
+        }
+        .head{
+            display: flex;
+            flex-direction: row;
+        }
+        .giga{
+            font-size: 50px;
+        }
+        .header-actions{
+            padding: 15px;
+            border-radius: 20px;
+
+        }.b1,.b2{
+            border: 2px solid #8B5CF6;
+        }
+        .b2:hover{
+            background-color: #8B5CF6;
+        }
+        .b1:hover{
+            background-color: #8B5CF6;
+        }
+        .game-info{
+            gap: 50px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+            align-items: center;
+            border-radius: 20px;
+        }
+        .game-area {
+            margin-top: 35px;
+            height: 200px;
+            border: 3px dashed #27272F;
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+            padding: 20px;
+            gap: 30px;
+        }
+        .game-area:hover{
+            border-color: #8B5CF6;
+        }
+        .arena{
+            border: 3px dashed #27272F;
+        }
+        .binsmen{
+            text-decoration: underline;
+            text-decoration-color: #8B5CF6;
+            text-underline-offset: 6px;
+        }
+        .game-area h2{
+            text-align: center;
+            margin: 0;
+            display: inline;
+        }
+        .game-area h2:hover{
+            color: #8B5CF6;
+        }
+        .effect{
+                background-color: transparent;
+                color: white;
+                border: 2px solid #8B5CF6;
+        }
+        .effect:hover{
+                background-color: #8B5CF6;
+                color: white;
+        }
+        .top-row {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .middle-row {
+            display: flex;
+            justify-content: center;
+        }
+        .middle-row{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .bottom-row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .game-panels h2{
+            text-decoration: underline;
+            text-decoration-color: #8B5CF6;
+            text-underline-offset: 6px;
+        }
+        .panel{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            font-size: 20px;
+            border: 3px dashed #27272F;
+        }
+        .panel:hover {
+            border-color: #8B5CF6;
+        }
+        .area{
+            font-size: 30px; 
+        }
+        .area:hover{
+            color: #8B5CF6;
+        }
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+            border: 3px dashed #27272F;
+        }
+        .game-panels{
+            border: 1px solid #27272F;
+            border-radius: 12px;
+            margin-top: 7px;
+        }
+        .game-panels h2{
+            margin-top: 35px;
+            text-align: center;
+        }
+        .controls{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .inventory-items{
+            display: flex;
+            justify-content: space-evenly;
+            width: 300px;
+            height: 75px;
+            gap: 10px;
+            flex-wrap: wrap;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .item{
+            border: 3px dashed #27272F;
+        }
+        .quest{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:15px;
+            margin:10px;
+            gap:20px;
+        }
+        .quest-item{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 45px;
+        }
+        .panel{
+            padding: 15px;
+            margin: 20px;
+        }
+        footer{
+            text-align: center;
+            border: 3px dashed #27272F;
+            margin-top: 10px;
+        }
+        footer:hover{
+            border-color: #8B5CF6;
+        }
+
+        @media (max-width: 1024px) {
+
+            .game-header {
+                gap: 15px;
+                padding: 25px;
+            }
+
+            .game-info {
+                gap: 20px;
+                margin: 10px;
+            }
+
+            .giga {
+                font-size: 42px;
+            }
+
+            .container {
+                gap: 10px;
+            }
+
+            .panel {
+                margin: 10px;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .game-header {
+                flex-wrap: wrap;
+                justify-content: center;
+                height: auto;
+                padding: 20px;
+            }
+
+            .head {
+                justify-content: center;
+            }
+
+            .giga {
+                font-size: 38px;
+            }
+
+            .game-info {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .header-actions {
+                padding: 10px;
+            }
+            .container {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .panel {
+                flex: 1 1 250px;
+                min-width: 0;
+            }
+
+            .quest {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .quest-item {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 500px) {
+
+            body {
+                overflow-x: hidden;
+            }
+
+            .game-header {
+                margin: 10px;
+                padding: 15px;
+            }
+
+            .giga {
+                font-size: 30px;
+                text-align: center;
+            }
+
+            .game-info {
+                width: 100%;
+                gap: 8px;
+                margin: 5px;
+            }
+
+            .game-info h3 {
+                font-size: 14px;
+            }
+
+            .header-actions {
+                width: 100%;
+                text-align: center;
+            }
+            .game-area {
+                height: 250px;
+                padding: 10px;
+                gap: 20px;
+                font-size: 16px;
+            }
+
+            .top-row {
+                justify-content: space-between;
+                padding: 0 20px;
+            }
+            .bottom-row {
+                justify-content: space-between;
+            }
+
+            .middle-row {
+                justify-content: space-between;
+            }
+            .container {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .panel {
+                width: auto;
+                margin: 10px;
+            }
+
+            .inventory-items {
+                justify-content: center;
+            }
+
+            .quest {
+                margin: 10px;
+                padding: 10px;
+            }
+
+            .quest-item {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .area {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+    <header class="game-header">
+
+        <div class="head">
+            <!-- <img src="../images/logo.png" alt="logo" width="100px" height="70px" class="logo" style="margin-top:0px;"> -->
+            <h1 class="giga">Flexbox Quest</h1>
+        </div>
+        
+
+        <div class="game-info">
+            <h3><i>Lives:</i> 2.5</h3>
+            <h3><i>Coins:</i> 72796</h3>
+            <h3><i>Level:</i> 99</h3>
+            <h3><i>Score:</i> 6767</h3>
+            <h3><i>Ping:</i> 999+</h3>
+        </div>
+
+        <div class="header-actions">
+            <button class="b1">Pause</button>
+            <button class="b2">Menu</button>
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="game-area">
+
+            <h2 class="binsmen">GAME AREA</h2>
+
+            <div class="top-row">
+                <div class="arena">Player</div>
+                <div class="arena">Star</div>
+                <div class="arena">Dailt Check In +1</div>
+            </div>
+
+            <div class="middle-row">
+                <div class="arena">Platform</div>
+                <div class="arena">Road-to-Guardian</div>
+            </div>
+
+            <div class="bottom-row">
+                <div class="arena">Platform</div>
+                <div class="arena">Collect all the stars!</div>
+                <div class="arena">Platform</div>
+            </div>
+
+        </section>
+
+        <section class="game-panels">
+
+            <h2 class="area">GAME PANEL</h2>
+
+            <div class="container">
+            <div class="panel controls">
+                    <h2>Controls</h2>
+                    <div class="control-row">
+                        <button class="effect">↑</button>
+                    </div>
+                    <div class="control-row">
+                        <button class="effect">←</button>
+                        <button class="effect">↓</button>
+                        <button class="effect">→</button>
+                    </div>
+                    <button class="effect">Jump</button>
+            </div>
+
+            <div class="panel inventory">
+                    <h2>Inventory</h2>
+
+                    <div class="inventory-items">
+                        <div class="item">Sword</div>
+                        <div class="item">Shield</div>
+                        <div class="item">Potion</div>
+                        <div class="item">Key</div>
+                        <div class="item">Magic Potion</div>
+                        <div class="item">Map</div>
+                        <div class="item">Shield</div>
+                        <div class="item">Coin</div>
+                    </div>
+            </div>
+
+            <div class="panel quest">
+                    <h2>Quest</h2>
+
+                    <div class="quest-item">
+                        <span>Collect 3 Stars</span>
+                        <span>1 / 3</span>
+                    </div>
+
+                    <div class="quest-item">
+                        <span>Find the Golden Key</span>
+                        <span>0 / 1</span>
+                    </div>
+
+                    <div class="quest-item">
+                        <span>Defeat the Monster</span>
+                        <span>0 / 1</span>
+                    </div>
+            </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+
+</body>
+</html>
