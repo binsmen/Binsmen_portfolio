@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+
+    <title>Student-Portal{Basic}</title>
+
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbIH7q6xwukp-wx4QEwjM2983rMV1bOlPCzZ4YtxD9uA&s=10">
+
+    <link rel="stylesheet" href="test.css">
+
+    <style>
+
+        body{
+
+            background-color: #f5f5f5;
+
+        }
+
+        table,th,td{
+
+            border: 1px solid black;
+
+            padding: 8px;
+
+            border-collapse: collapse;
+
+        }
+
+        h1{
+
+            color: blue;
+
+        }
+
+        h2{
+
+            color: darkgreen;
+
+        }
+
+        h1:hover,h2:hover{
+
+            text-decoration: underline;
+
+        }
+
+        .amig{
+
+            width: 300px;
+
+            height: 200px;
+
+            border-radius: 15px;
+
+            border: 3px solid #333;
+
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+        }
+
+        .crew{
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 20px;
+
+        }
+
+        .crew img{
+            width: 320px;
+            height: 210px;
+            object-fit: cover;   
+        }
+
+        .crew h1{
+            color: red;
+            font-size: 30px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header class="portal">
+
+        <h1>
+
+            **Student Portal**
+
+        </h1>
+
+    </header>
+
+    <div class="crew">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGnHMfCHGAaEP4cBo4yDJxUqcBrrk0UGsHB4gj8ZFe-A&s=10" class="amig">
+
+    </div>
+
+    <nav class="data">
+
+        <a href="#">Home </a>
+
+        <a href="#">Profile</a>
+
+        <a href="#">Courses</a>
+
+        <a href="#">Register</a>
+
+    </nav>
+
+    <section class="profile">
+
+        <h2>**Student Profile**</h2>
+
+        <table class="neel">
+
+            <thead style="font-family: sans-serif; color: brown;">
+
+                <tr>
+
+                    <th>Field</th>
+
+                    <th>Value</th>
+
+                </tr>
+
+            </thead>
+
+            <tr>
+
+                <td>Name</td>
+
+                <td>Neel vasthav</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Student ID</td>
+
+                <td>24BCE1001</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Program</td>
+
+                <td>Computer Science</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Year</td>
+
+                <td>1st Year</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Email</td>
+
+                <td>neelvas9898@gmail.com</td>
+
+            </tr>
+
+        </table>
+
+    </section>
+
+    <section class="skill">
+
+        <h2>**My Skills**</h2>
+
+        <ol>
+
+            <li>Full-Stack</li>
+
+            <li>App development</li>
+
+            <li>Agentic AI</li>
+
+            <li>Competitive programming</li>
+
+            <li>Git&Github</li>
+
+        </ol>
+
+    </section>
+
+    <section class="Schedule">
+
+        <h2>**Weekly Schedule**</h2>
+
+        <table>
+
+            <thead style="font-family: sans-serif; color: brown;">
+
+                <tr>
+
+                    <th>Day</th>
+
+                    <th>9:00 AM</th>
+
+                    <th>11:00 AM</th>
+
+                    <th>2:00 AM</th>
+
+                </tr>
+
+            </thead>
+
+            <tr>
+
+                <td>Monday</td>
+
+                <td>HTML</td>
+
+                <td>CSS</td>
+
+                <td>Javascript</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Monday</td>
+
+                <td>HTML</td>
+
+                <td>CSS</td>
+
+                <td>Javascript</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Monday</td>
+
+                <td>HTML</td>
+
+                <td>CSS</td>
+
+                <td>Javascript</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Monday</td>
+
+                <td>HTML</td>
+
+                <td>CSS</td>
+
+                <td>Javascript</td>
+
+            </tr>
+
+        </table>
+
+    </section>
+
+    <section class="Courses">
+
+        <h2>**Course Registration Form**</h2>
+
+        <form>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Name">
+
+            <p></p>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Email">
+
+            <p></p>
+
+            <label for="student-id">Student ID:</label>
+            <input type="text" id="student-id" placeholder="Student ID">
+
+            <p></p>
+
+            <label for="course">Select your course:</label>
+
+            <select id="course">
+
+                <option value="" selected disabled>--Select Course---</option>
+
+                <option value="java">Java</option>
+
+                <option value="Javascript">Javascript</option>
+
+                <option value="Python">Python</option>
+
+                <option value="DBMS">DBMS</option>
+
+                <option value="CP">CP</option>
+
+            </select>
+
+            <p></p>
+
+            Preferred Learning Mode:
+
+            <label for="online">Online</label>
+            <input type="radio" name="Learning" id="online">
+
+            <label for="Offline">Offline</label>
+            <input type="radio" name="Learning" id="Offline">
+
+            <p></p>
+
+            Skills You Already Know:
+
+            <label for="html">HTML</label>
+            <input type="checkbox" id="html">
+
+            <label for="CSS">CSS</label>
+            <input type="checkbox" id="CSS">
+
+            <label for="Javascript">Javascript</label>
+            <input type="checkbox" id="Javascript">
+
+            <label for="DBMS">DBMS</label>
+            <input type="checkbox" id="DBMS">
+
+            <p></p>
+
+            <button id="submit" type="submit">Submit</button>
+
+            <button id="reset" type="reset">Reset</button>
+
+        </form>
+
+    </section>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+
+</html>
