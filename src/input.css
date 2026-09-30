@@ -1,4 +1,2 @@
 @import "tailwindcss";
-@source "../../Assignment-2";
-@source "../../Assignment-1";
-@source "../../Main portfolio";
+@source "../index.html";
